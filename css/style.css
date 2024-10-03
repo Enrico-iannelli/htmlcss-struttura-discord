@@ -1,9 +1,173 @@
 /* # RESET */
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* # UTILS */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+/* # HEADER */
+
+/* * Page Header */
+.page-header {
+  padding: 15px 0;
+
+  /* debug */
+  background-color: lightskyblue;
+}
+
+.page-header > .container {
+  display: flex;
+}
+
+.page-header .header-item {
+  flex-basis: 20%;
+  padding: 5px 10px;
+
+  /* debug */
+  background-color: goldenrod;
+  border: 2px dashed black;
+}
+
+.page-header .nav-container {
+  flex-grow: 1;
+  text-align: center;
+}
+
+.page-header .login-container {
+  text-align: right;
+}
+
+/* * Hero Section */
+
+.hero {
+  padding: 45px 0;
+
+  /* debug */
+  background-color: navy;
+  border: 2px dashed black;
+}
+
+.hero > .container {
+  width: 800px;
+  min-height: 400px;
+
+  /* debug */
+  background-color: violet;
+  border: 2px dashed black;
+}
+
+/* # MAIN */
+
+/* * Col Sections */
+
+.main-section {
+  padding: 45px 0;
+}
+
+.main-section > .container {
+  display: flex;
+}
+
+.main-section:nth-child(even) {
+  background-color: lightgray;
+}
+
+.main-section .lg-col {
+  flex-basis: 60%;
+
+  /* debug */
+  background-color: pink;
+  min-height: 400px;
+  border: 2px dashed black;
+}
+
+.main-section .sm-col {
+  flex-basis: 40%;
+
+  /* debug */
+  background-color: skyblue;
+  min-height: 400px;
+  border: 2px dashed black;
+}
+
+.main-section .green-col {
+  flex-basis: 100%;
+
+  /* debug */
+  background-color: darkgreen;
+  min-height: 700px;
+  border: 2px dashed black;
+}
+
+/* # FOOTER */
+
+footer {
+  padding-top: 10px;
+
+  /*debug */
+  background-color: #222629;
+}
+
+/* Upper Footer */
+
+.up-footer {
+  display: flex;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid white;
+}
+
+.up-footer .sm-col {
+  flex-basis: 30%;
+
+  /* debug */
+  background-color: salmon;
+  min-height: 500px;
+  border: 2px dashed black;
+}
+
+.up-footer .lg-col {
+  display: flex;
+  flex-basis: 70%;
+
+  /* debug */
+  background-color: #1fafa6;
+  min-height: 500px;
+  border: 2px dashed black;
+}
+
+.up-footer .smaller-col {
+  width: 25%;
+  border: 2px dashed white;
+}
+
+/* Lower Footer */
+
+.low-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  /* debug */
+  min-height: 70px;
+  background-color: aquamarine;
+}
+
+.low-footer .logo,
+.button {
+  padding: 5px 8px;
+
+  /* debug */
+  background-color: lightpink;
+  border: 2px dashed black;
+}
